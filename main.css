@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,10 +5,12 @@
 }
 :root{
     --blue: #0768a9;
+    --blueL: #0e76a8;
+    --red: #c4302b;
     --midYellow: #ffcc00;
     --dark: #313031;
     --midDark: #404040;
-    --lightDark: #808080;
+    --lightDark: #afafaf;
     --lightGrey: #f5f5f5;
     --extraLightGrey: #f9f9f9;
 }
@@ -24,7 +25,7 @@ img{
     display: block;
 }
 a{
-    color: whitesmoke;
+    color: var(--dark);
     text-decoration: none;
 }
 ul li{
@@ -368,6 +369,8 @@ button{
     text-align: center;
     padding: 1rem;
     margin: 1rem 0;
+    color: var(--dark);
+    text-decoration: none;
 }
 .contact-info-item span{
     font-size: 2rem;
@@ -415,7 +418,7 @@ button{
     align-items: center;
 }
 .footer-icon-item{
-    background: var(--dark);
+    background: var(--lightGrey);
     color: white;
     width: 70px;
     height: 70px;
@@ -427,8 +430,42 @@ button{
     font-size: 1.8rem;
     transition: all 0.5s ease-in-out;
 }
+.footer-icon-item-y{
+    background: var(--lightGrey);
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-icon-item-l{
+    background: var(--lightGrey);
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+
 .footer-icon-item:hover{
-    background: var(--blue);
+    background: var(--lightDark);
+}
+.footer-icon-item-y:hover{
+    background: var(--red);
+}
+.footer-icon-item-l:hover{
+    background: var(--blueL);
 }
 .footer-text{
     text-align: center;

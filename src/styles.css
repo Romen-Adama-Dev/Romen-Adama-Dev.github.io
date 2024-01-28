@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.header-image {
+    background-image: url('/assets/images/test1.png');
+    height: 70vh;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hide-header {
+    transform: translateY(-70vh); /* Desplaza la imagen hacia arriba */
+}

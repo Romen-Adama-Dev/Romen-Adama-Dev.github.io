@@ -8,6 +8,22 @@
       {
         "link-name": "off"
       }
+    ],
+    "button-type": "off",
+    "no-inline-styles": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
     ]
   }
 }

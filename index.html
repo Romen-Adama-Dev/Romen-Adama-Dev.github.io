@@ -227,7 +227,7 @@
 
         <section class="about-text">
           <p>
-            I am a recent graduate with a degree in Computer Engineering from ULPGC, where I am currently finalizing my Bachelor's Thesis. 
+            I'm Romén Adama Caetano Ramírez, and I am a recent graduate with a degree in Computer Engineering from ULPGC, where I am currently finalizing my Bachelor's Thesis. 
             My thesis project involves developing a web application using Angular 17/18 for the ITC (Canary Technological Institute).
           </p>
 
@@ -815,6 +815,24 @@
               </a>
             </li>
 
+            <li class="project-item  active" data-filter-item data-category="project management">
+              <a href="https://www.figma.com/files/project/40624190">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/media/logos/FIgma/figma.png" alt="surf-sharing" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Project Management</h3>
+
+                <p class="project-category">Project Management</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="https://www.figma.com/board/ixa6cIeBdcB6fgsskkY5RG/USERS-STORIES?node-id=0-1&t=vIW4jUiWwnA2ZEUE-0">
 
@@ -1201,27 +1219,55 @@
 
         <section class="contact-form">
 
+          <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <script type="text/javascript">
+            (function(){
+                emailjs.init("Xls9trtWG184TRo6U");
+            })();
+          </script>
+
           <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
+          <form id="contact-form" class="form">
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
+          </section>
 
-        </section>
+          <script type="text/javascript">
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
+            // Collect the form data
+            var fullName = this.fullname.value;
+            var email = this.email.value;
+            var message = this.message.value;
+
+            // Concatenate email and message
+            var fullMessage = `Email: ${email}\n\nMessage:\n${message}`;
+
+            // Use EmailJS to send the email
+            emailjs.send("service_lr27tjm", "template_9st8364", {
+              to_name: "Recipient Name",
+              from_name: fullName,
+              message: fullMessage,
+              reply_to: email
+            })
+            .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert("Message sent successfully!");
+            }, function(error) {
+              console.log('FAILED...', error);
+              alert("Message failed to send. Please try again later.");
+            });
+          });
+          </script>
       </article>
 
     </div>

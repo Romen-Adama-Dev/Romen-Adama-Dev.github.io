@@ -1,1183 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Romen-Dev</title>
-
-  <!-- 
-    - Meta description 
-  -->
+  
+  <!-- Meta description -->
   <meta name="description" content="Romen Adama Caetano Ramirez - Web developer specializing in Angular, Front-End Development, and Project Management. Explore my projects, skills, and experience.">
-
-  <!--
-    - favicon
-  -->
+  
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/media/logos/Romen-Dev/logo-w.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
+  
+  <!-- Custom CSS link -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  
+  <!-- Google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!--
-    - #MAIN
-  -->
+<main>
 
-  <main>
+  <!-- Sidebar -->
+  <aside class="sidebar" data-sidebar>
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="./assets/media/avatar/avatar.png" alt="Romen-Dev" width="80">
+      </figure>
+      <div class="info-content">
+        <h1 class="name" title="Romen Dev">Romen Dev</h1>
+        <p class="title">Web developer</p>
+      </div>
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+    </div>
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:radamacr.trabajo@outlook.com" class="contact-link">radamacr.trabajo@outlook.com</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+34651759962" class="contact-link">+34 651 75 99 62</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="logo-github"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Github</p>
+            <a href="https://github.com/Romen-Adama-Dev/" class="contact-link">Romen-Adama-Dev</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">LinkedIn</p>
+            <a href="https://www.linkedin.com/public-profile/settings" class="contact-link">Romén Adama Caetano Ramírez</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Las Palmas de Gran Canaria, España</address>
+          </div>
+        </li>
+      </ul>
+      <div class="separator"></div>
+      <ul class="social-list">
+        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-reddit"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-discord"></ion-icon></a></li>
+      </ul>
+    </div>
+  </aside>
 
-    <!--
-      - #SIDEBAR
-    -->
+  <!-- Main content -->
+  <div class="main-content">
 
-    <aside class="sidebar" data-sidebar>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+      </ul>
+    </nav>
 
-      <div class="sidebar-info">
+    <!-- About section -->
+    <article class="about active" data-page="about">
+      <header>
+        <h2 class="h2 article-title">About me</h2>
+      </header>
+      <section class="about-text">
+        <p>I'm Romén Adama Caetano Ramírez, and I am a recent graduate with a degree in Computer Engineering from ULPGC, where I am currently finalizing my Bachelor's Thesis. My thesis project involves developing a web application using Angular 17/18 for the ITC (Canary Technological Institute).</p>
+        <p>As a software developer, my focus is on enhancing my Front-End skills. I have a strong passion for the technology sector and an entrepreneurial spirit that drives my interest in ICT (Information and Communication Technology) and project organization and creation.</p>
+        <p>Looking ahead, I aim to further develop my expertise in agile methodologies, project management, and ICT management.</p>
+      </section>
+      <section class="service">
+        <h3 class="h3 service-title">What I'm doing</h3>
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon/icon-design.svg" alt="design icon" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Web design</h4>
+              <p class="service-item-text">Learning and training with the most modern and high-quality design tools for web design.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon/icon-dev.svg" alt="Web development icon" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Web development</h4>
+              <p class="service-item-text">High-quality development of sites at a professional level. Currently focusing on Angular and Vanilla HTML, CSS, and JS.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon/icon-app.svg" alt="mobile app icon" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Mobile apps</h4>
+              <p class="service-item-text">Developing applications for Android and learning to develop for the iOS & Mac OS ecosystem.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><img src="./assets/images/icon/icon-photo.svg" alt="camera icon" width="40"></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">IA</h4>
+              <p class="service-item-text">Currently training in the world of AI and all the tools being developed for it.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="projects">
+        <h3 class="h3 projects-title">Projects</h3>
+        <ul class="projects-list has-scrollbar">
+          <li class="projects-item"><a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/"><img src="./assets/media/logos/H4G/h4g-b.png" alt="project logo"></a></li>
+          <li class="projects-item"><a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check
 
-        <figure class="avatar-box">
-          <img src="./assets/media/avatar/avatar.png" alt="Romen-Dev" width="80">
-        </figure>
+_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e"><img src="./assets/media/logos/BK/bk-b.png" alt="project logo"></a></li>
+          <li class="projects-item"><a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?q=sharedwith:public%20parent:1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL"><img src="./assets/media/logos/XPlorer/xp.png" alt="project logo"></a></li>
+          <li class="projects-item"><a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/"><img src="./assets/media/logos/Demola/dc.png" alt="project logo"></a></li>
+          <li class="projects-item"><a href="https://romen-adama-dev.github.io/"><img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="project logo"></a></li>
+        </ul>
+      </section>
+    </article>
 
-        <div class="info-content">
-          <h1 class="name" title="Romen Dev">Romen Dev</h1>
-
-          <p class="title">Web developer</p>
+    <!-- Resume section -->
+    <article class="resume" data-page="resume">
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Education</h3>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:radamacr.trabajo@outlook.com" class="contact-link">radamacr.trabajo@outlook.com</a>
-            </div>
-
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
+            <span>2018 — 2020</span>
+            <p class="timeline-text">The first two years of the Computer Engineering degree. Gained foundational knowledge in programming and computer science concepts.</p>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+34651759962" class="contact-link">+34 651 75 99 62</a>
-            </div>
-
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Level B2 English, Oxford Test of English (2021)</h4>
+            <span>2021 — 2022</span>
+            <p class="timeline-text">Obtained a B2 level of English proficiency, certified by the Oxford Test of English. This certification is recognized by the University of Oxford and the British Council.</p>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Github</p>
-
-              <a href="https://github.com/Romen-Adama-Dev/" class="contact-link">Romen-Adama-Dev</a>
-            </div>
-
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Politechnika Krakowska im. Tadeusza Kościuszki</h4>
+            <span>2021 — 2022</span>
+            <p class="timeline-text">Erasmus+ program. Studied in Poland for a year, gaining experience in a different academic environment and culture. Developing my English language skills and soft skills.</p>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-
-              <a href="https://www.linkedin.com/public-profile/settings" class="contact-link">Romén Adama Caetano Ramírez</a>
-            </div>
-
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
+            <span>2022 — 2024</span>
+            <p class="timeline-text">The last two years of the Computer Engineering degree. Specialized in web development and software engineering. Currently working on my Bachelor's Thesis.</p>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Las Palmas de Gran Canaria, España</address>
-            </div>
-
+        </ol>
+      </section>
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Experience</h3>
+        </div>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Internship at Edataconsulting</h4>
+            <span>02/2024 — 05/2024</span>
+            <p class="timeline-text">Completed an internship at Edataconsulting, focusing on the development of a web application using Angular 17. Responsibilities included migrating from Angular 14 to Angular 17, implementing new features, ensuring a clear architecture, and correcting bugs.<br>Software used: Angular, AWS, Spring Boot, YouTrack, Git, SonarQube, TablePlus, Slack, Docker.</p>
           </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Airbnb Manager</h4>
+            <span>2023 — Present</span>
+            <p class="timeline-text">Comprehensive management of a tourist apartment in Maspalomas, Gran Canaria. Responsibilities include handling reservations, customer service, cleaning, maintenance, and marketing.</p>
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Research Department at the University of Las Palmas de Gran Canaria</h4>
+            <span>01/2019 — 12/2019</span>
+            <p class="timeline-text">Part time job at the research department of the University of Las Palmas de Gran Canaria. Responsibilities included office automation for database management, program administration, and content development.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="skill">
+        <h3 class="h3 skills-title">My skills</h3>
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Html, CSS & JS</h5>
+              <data value="expert">Expert</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Git</h5>
+              <data value="advanced">Advanced</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Angular</h5>
+              <data value="advanced">Advanced</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Android Studio</h5>
+              <data value="advanced">Advanced</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Back-End (NodeJs, SprinBoot, Pyton, Java)</h5>
+              <data value="basic">Basic</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 40%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Notion & Trello</h5>
+              <data value="intermediate">Intermediate</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">LaTex (overleaf)</h5>
+              <data value="basic">Basic</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Web design</h5>
+              <data value="intermediate">Intermediate</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Graphic design</h5>
+              <data value="intermediate">Intermediate</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 60%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Canva</h5>
+              <data value="expert">Expert</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style
 
+="width: 90%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">WordPress</h5>
+              <data value="basic">Basic</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Figma</h5>
+              <data value="intermediate">Intermediate</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 60%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">ChatGPT</h5>
+              <data value="expert">Expert</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Office automation</h5>
+              <data value="advanced">Advanced</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">AWS</h5>
+              <data value="basic">Basic</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Dev-Ops</h5>
+              <data value="intermediate">Intermediate</data>
+            </div>
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 65%;"></div>
+            </div>
+          </li>
         </ul>
+      </section>
+    </article>
 
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-reddit"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-
+    <!-- Portfolio section -->
+    <article class="portfolio" data-page="portfolio">
+      <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+      </header>
+      <section class="projects">
+        <ul class="filter-list">
+          <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+          <li class="filter-item"><button data-filter-btn>Web design</button></li>
+          <li class="filter-item"><button data-filter-btn>Applications</button></li>
+          <li class="filter-item"><button data-filter-btn>Web development</button></li>
+          <li class="filter-item"><button data-filter-btn>Hackatons</button></li>
+          <li class="filter-item"><button data-filter-btn>Management</button></li>
         </ul>
-
-      </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-selecct-value>Select category</div>
+            <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+          </button>
+          <ul class="select-list">
+            <li class="select-item"><button data-select-item>All</button></li>
+            <li class="select-item"><button data-select-item>Web design</button></li>
+            <li class="select-item"><button data-select-item>Applications</button></li>
+            <li class="select-item"><button data-select-item>Web development</button></li>
+            <li class="select-item"><button data-filter-btn>Hackatons</button></li>
+            <li class="select-item"><button data-filter-btn>Management</button></li>
+          </ul>
+        </div>
+        <ul class="project-list">
+          <li class="project-item active" data-filter-item data-category="web development"><a href="https://github.com/Romen-Adama-Dev/Romen-Adama-Dev.github.io">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="romen-dev" loading="lazy">
+            </figure>
+            <h3 class="project-title">Romen-Dev</h3>
+            <p class="project-category">Web development</p></a>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+          <li class="project-item active" data-filter-item data-category="management"><a href="https://drive.google.com/file/d/1u3UxEbJ_XYK4gm2e4OkN8_md8ihid0ft/view?usp=sharing">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/DevOps/devops.png" alt="devops" loading="lazy">
+            </figure>
+            <h3 class="project-title">Dev-Ops EII</h3>
+            <p class="project-category">Management</p></a>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/BK/bk-b.png" alt="bk" loading="lazy">
+            </figure>
+            <h3 class="project-title">Bungalow Kiwi</h3>
+            <p class="project-category">Management</p></a>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.figma.com/files/project/40624190">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/FIgma/figma.png" alt="surf-sharing" loading="lazy">
+            </figure>
+            <h3 class="project-title">Project Management</h3>
+            <p class="project-category">Management</p></a>
           </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+          <li class="project-item active" data-filter-item data-category="applications"><a href="https://github.com/AlexS-1/SurfSharing">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
+            </figure>
+            <h3 class="project-title">SurfSharing</h3>
+            <p class="project-category">Applications</p></a>
           </li>
+          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.figma.com/board/ixa6cIeBdcB6fgsskkY5RG/USERS-STORIES?node-id=0-1&t=vIW4jUiWwnA2ZEUE-0">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
+            </figure>
+            <h3 class="project-title">SurfSharing</h3>
+            <p class="project-category">Management</p></a>
+          </li>
+          <li class="project-item active" data-filter-item data-category="web design"><a href="https://www.figma.com/design/SndPMnPcuDf6toJ0hJcFxh/PAMN-Museum?node-id=0-1&t=HYGNJzXOOs6h8H0S-1">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
+            </figure>
+            <h3 class="project-title">PAMN Museum</h3>
+            <p class="project-category">Web design</p></a>
+          </li>
+          <li class="project-item active" data-filter-item data-category="
 
+applications"><a href="https://github.com/Romen-Adama-Dev/PAMNMuseum.git">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
+            </figure>
+            <h3 class="project-title">PAMN Museum</h3>
+            <p class="project-category">Applications</p></a>
+          </li>
+          <li class="project-item active" data-filter-item data-category="hackatons"><a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?usp=sharing">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/XPlorer/xp-doc.png" alt="xplorer" loading="lazy">
+            </figure>
+            <h3 class="project-title">Santander Xplorer</h3>
+            <p class="project-category">Hackatons</p></a>
+          </li>
+          <li class="project-item active" data-filter-item data-category="hackatons"><a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/Demola/dc.png" alt="demola" loading="lazy">
+            </figure>
+            <h3 class="project-title">Demola Canarias</h3>
+            <p class="project-category">Hackatons</p></a>
+          </li>
+          <li class="project-item active" data-filter-item data-category="hackatons"><a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/">
+            <figure class="projects-item">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="./assets/media/logos/H4G/h4g-b.png" alt="h4g" loading="lazy">
+            </figure>
+            <h3 class="project-title">Hack4Good</h3>
+            <p class="project-category">Hackatons</p></a>
+          </li>
         </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Romén Adama Caetano Ramírez, and I am a recent graduate with a degree in Computer Engineering from ULPGC, where I am currently finalizing my Bachelor's Thesis. 
-            My thesis project involves developing a web application using Angular 17/18 for the ITC (Canary Technological Institute).
-          </p>
-
-          <p>
-            As a software developer, my focus is on enhancing my Front-End skills. 
-            I have a strong passion for the technology sector and an entrepreneurial spirit that drives my interest in ICT (Information and Communication Technology) and project organization and creation. 
-          </p>
-
-          <p>
-            Looking ahead, I aim to further develop my expertise in agile methodologies, project management, and ICT management.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon/icon-design.svg
-                " alt="design icon" width="40">
+      </section>
+    </article>
+    
+    <!-- Blog section -->
+    <article class="blog" data-page="blog">
+      <header>
+        <h2 class="h2 article-title">Blog</h2>
+      </header>
+      <section class="blog-posts">
+        <ul class="blog-posts-list">
+          <li class="blog-post-item"><a href="https://learn.microsoft.com/es-es/training/career-paths/ai-engineer">
+            <figure class="blog-banner-box"><img src="./assets/images/blog/microsoft-ia.png" alt="Ingeniero de IA" loading="lazy"></figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  Learning and training with the most modern and high-quality design tools for web design.
-                </p>
+              <h3 class="h3 blog-item-title">Free course</h3>
+              <p class="blog-text">Free course offered by Microsoft to become an AI Engineer.</p>
+            </div></a>
+          </li>
+          <li class="blog-post-item"><a href="https://cursos.devtalles.com/courses/angular">
+            <figure class="blog-banner-box"><img src="./assets/images/blog/dev-tales-angular.png" alt="Dev-Talles Angular" loading="lazy"></figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
               </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon/icon-dev.svg" alt="Web development icon" width="40">
+              <h3 class="h3 blog-item-title">Angular Course</h3>
+              <p class="blog-text">I am taking the Dev-Tales course on Angular, a very comprehensive and well-explained course.</p>
+            </div></a>
+          </li>
+          <li class="blog-post-item"><a href="https://learn.gitkraken.com/courses/git-foundations">
+            <figure class="blog-banner-box"><img src="./assets/images/blog/git-kraken.png" alt="git-kraken" loading="lazy"></figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
               </div>
+              <h3 class="h3 blog-item-title">Free course</h3>
+              <p class="blog-text">Free course offered by Git-Kraken to become an expert in Git.</p>
+            </div></a>
+          </li>
+        </ul>
+      </section>
+    </article>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at a professional level. Currently focusing on Angular and Vanilla HTML, CSS, and JS.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Developing applications for Android and learning to develop for the iOS & Mac OS ecosystem.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">IA</h4>
-
-                <p class="service-item-text">
-                  Currently training in the world of AI and all the tools being developed for it.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - projects
-        -->
-
-        <section class="projects">
-
-          <h3 class="h3 projects-title">Projects</h3>
-
-          <ul class="projects-list has-scrollbar">
-
-            <li class="projects-item">
-              <a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/">
-                <img src="./assets/media/logos/H4G/h4g-b.png" alt="project logo">
-              </a>
-            </li>
-
-            <li class="projects-item">
-              <a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e">
-                <img src="./assets/media/logos/BK/bk-b.png" alt="project logo">
-              </a>
-            </li>
-
-            <li class="projects-item">
-              <a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?q=sharedwith:public%20parent:1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL">
-                <img src="./assets/media/logos/XPlorer/xp.png" alt="project logo">
-              </a>
-            </li>
-
-            <li class="projects-item">
-              <a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/">
-                <img src="./assets/media/logos/Demola/dc.png" alt="project logo">
-              </a>
-            </li>
-
-            <li class="projects-item">
-              <a href="https://romen-adama-dev.github.io/">
-                <img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="project logo">
-              </a>
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+    <!-- Contact section -->
+    <article class="contact" data-page="contact">
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+      <section class="mapbox" data-mapbox>
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7039.162367497625!2d-15.483205889625424!3d28.098315371088916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4094429440f3cb%3A0x29aa5abc5aa805a6!2s35018%20Tamaraceite%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1718889461874!5m2!1ses!2ses" width="400" height="300" loading="lazy"></iframe>
+        </figure>
+      </section>
+      <section class="contact-form">
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function(){
+              emailjs.init("Xls9trtWG184TRo6U");
+          })();
+        </script>
+        <h3 class="h3 form-title">Contact Form</h3>
+        <form id="contact-form" class="form">
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
-            
-              <span>2018 — 2020</span>
-            
-              <p class="timeline-text">
-                The first two years of the Computer Engineering degree. Gained foundational knowledge in programming and computer science concepts.
-              </p>
-            
-            </li>
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Level B2 English, Oxford Test of English (2021)</h4>
-
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-                Obtained a B2 level of English proficiency, certified by the Oxford Test of English. This certification is recognized by the University of Oxford and the British Council.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Politechnika Krakowska im. Tadeusza Kościuszki</h4>
-
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-                Erasmus+ program. Studied in Poland for a year, gaining experience in a different academic environment and culture. Developing my English language skills and soft skills.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
-
-              <span>2022 — 2024</span>
-
-              <p class="timeline-text">
-                The last two years of the Computer Engineering degree. Specialized in web development and software engineering. Currently working on my Bachelor's Thesis.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Internship at Edataconsulting</h4>
-            
-              <span>02/2024 — 05/2024</span>
-            
-              <p class="timeline-text">
-                Completed an internship at Edataconsulting, focusing on the development of a web application using Angular 17. Responsibilities included migrating from Angular 14 to Angular 17, implementing new features, ensuring a clear architecture, and correcting bugs.
-                <br>Software used: Angular, AWS, Spring Boot, YouTrack, Git, SonarQube, TablePlus, Slack, Docker.
-              </p>
-            
-            </li>            
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Airbnb Manager</h4>
-            
-              <span>2023 — Present</span>
-            
-              <p class="timeline-text">
-                Comprehensive management of a tourist apartment in Maspalomas, Gran Canaria. Responsibilities include handling reservations, customer service, cleaning, maintenance, and marketing.
-              </p>
-            
-            </li>            
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Department at the University of Las Palmas de Gran Canaria</h4>
-            
-              <span>01/2019 — 12/2019</span>
-            
-              <p class="timeline-text">
-                Part time job at the research department of the University of Las Palmas de Gran Canaria. Responsibilities included office automation for database management, program administration, and content development.
-              </p>
-            
-            </li>            
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-          <!-- 
-            - #SKILLS
-            - Master 100%
-            - Expert 85%
-            - Advanced 75%
-            - Intermediate 50%
-            - Basic 40%
-          -->
-
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Html, CSS & JS</h5>
-                <data value="expert">Expert</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Git</h5>
-                <data value="advanced">Advanced</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Angular</h5>
-                <data value="advanced">Advanced</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Android Studio</h5>
-                <data value="advanced">Advanced</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Back-End (NodeJs, SprinBoot, Pyton, Java)</h5>
-                <data value="basic">Basic</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Notion & Trello</h5>
-                <data value="intermediate">Intermediate</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">LaTex (overleaf)</h5>
-                <data value="basic">Basic</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="intermediate">Intermediate</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="intermediate">Intermediate</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Canva</h5>
-                <data value="expert">Expert</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="basic">Basic</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Figma</h5>
-                <data value="intermediate">Intermediate</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ChatGPT</h5>
-                <data value="expert">Expert</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Office automation</h5>
-                <data value="advanced">Advanced</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">AWS</h5>
-                <data value="basic">Basic</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Dev-Ops</h5>
-                <data value="intermediate">Intermediate</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Hackatons</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Management</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-filter-btn>Hackatons</button>
-              </li>
-
-              <li class="select-item">
-                <button data-filter-btn>Management</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Romen-Adama-Dev/Romen-Adama-Dev.github.io">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="romen-dev" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Romen-Dev</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="management">
-              <a href="https://drive.google.com/file/d/1u3UxEbJ_XYK4gm2e4OkN8_md8ihid0ft/view?usp=sharing">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/DevOps/devops.png" alt="devops" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dev-Ops EII</h3>
-
-                <p class="project-category">Management</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="management">
-              <a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/BK/bk-b.png" alt="bk" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Bungalow Kiwi</h3>
-
-                <p class="project-category">Management</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="management">
-              <a href="https://www.figma.com/files/project/40624190">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/FIgma/figma.png" alt="surf-sharing" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Project Management</h3>
-
-                <p class="project-category">Management</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/AlexS-1/SurfSharing">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SurfSharing</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="management">
-              <a href="https://www.figma.com/board/ixa6cIeBdcB6fgsskkY5RG/USERS-STORIES?node-id=0-1&t=vIW4jUiWwnA2ZEUE-0">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">SurfSharing</h3>
-
-                <p class="project-category">Management</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/design/SndPMnPcuDf6toJ0hJcFxh/PAMN-Museum?node-id=0-1&t=HYGNJzXOOs6h8H0S-1">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PAMN Museum</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Romen-Adama-Dev/PAMNMuseum.git">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PAMN Museum</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="hackatons">
-              <a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?usp=sharing">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/XPlorer/xp-doc.png" alt="xplorer" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Santander Xplorer</h3>
-
-                <p class="project-category">Hackatons</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="hackatons">
-              <a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/">
-
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/Demola/dc.png" alt="demola" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Demola Canarias</h3>
-
-                <p class="project-category">Hackatons</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="hackatons">
-              <a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/">
-                <!-- Alternative: <figure class="project-img"> -->
-                <figure class="projects-item">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/media/logos/H4G/h4g-b.png" alt="h4g" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Hack4Good</h3>
-
-                <p class="project-category">Hackatons</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-      
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://learn.microsoft.com/es-es/training/career-paths/ai-engineer">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/microsoft-ia.png" alt="Ingeniero de IA" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Education</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Wed 19, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Free course</h3>
-
-                  <p class="blog-text">
-                    Free course offered by Microsoft to become an AI Engineer.
-                  </p>
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://cursos.devtalles.com/courses/angular">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/dev-tales-angular.png" alt="Dev-Talles Angular" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Education</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Wed 19, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Angular Course</h3>
-
-                    <p class="blog-text">
-                    I am taking the Dev-Tales course on Angular, a very comprehensive and well-explained course.
-                  </p>
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://learn.gitkraken.com/courses/git-foundations">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog/git-kraken.png" alt="git-kraken" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Education</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Wed 19, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Free course</h3>
-
-                  <p class="blog-text">
-                    Free course offered by Git-Kraken to become an expert in Git.
-                  </p>
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7039.162367497625!2d-15.483205889625424!3d28.098315371088916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4094429440f3cb%3A0x29aa5abc5aa805a6!2s35018%20Tamaraceite%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1718889461874!5m2!1ses!2ses"
-              width="400" height="300" loading="lazy">
-            </iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-          <script type="text/javascript">
-            (function(){
-                emailjs.init("Xls9trtWG184TRo6U");
-            })();
-          </script>
-
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form id="contact-form" class="form">
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-          </section>
-
-          <script type="text/javascript">
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+          <button class="form-btn" type="submit" data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
+          </button>
+        </form>
+        <script type="text/javascript">
           document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-
             // Collect the form data
             var fullName = this.fullname.value;
             var email = this.email.value;
             var message = this.message.value;
-
             // Concatenate email and message
             var fullMessage = `Email: ${email}\n\nMessage:\n${message}`;
-
             // Use EmailJS to send the email
             emailjs.send("service_lr27tjm", "template_9st8364", {
               to_name: "Recipient Name",
@@ -1193,23 +585,19 @@
               alert("Message failed to send. Please try again later.");
             });
           });
-          </script>
-      </article>
+        </script>
+      </section>
+    </article>
+  </div>
+</main>
 
-    </div>
+<!-- Custom JS link -->
+<script src="./assets/js/script.js"></script>
 
-  </main>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- Ionicons link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
+```

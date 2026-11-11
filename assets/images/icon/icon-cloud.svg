@@ -1,8 +1,8 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40">
   <defs>
     <linearGradient id="cloudGradient" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(400, 0, 0, 512, 56, 0)">
-      <stop offset="0.26" stop-color="#ffdb6e" />
-      <stop offset="1" stop-color="#ffbc5e" />
+      <stop offset="0.26" stop-color="#A78BFA" />
+      <stop offset="1" stop-color="#8B5CF6" />
     </linearGradient>
   </defs>
   <g>

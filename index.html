@@ -1,701 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Romen-Dev</title>
-  
-  <!-- Meta description -->
-  <meta name="description" content="Romen Adama Caetano Ramirez - Web developer specializing in Angular, Front-End Development, and Project Management. Explore my projects, skills, and experience.">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/media/logos/Romen-Dev/logo-w.png" type="image/x-icon">
-  
-  <!-- Custom CSS link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <!-- Google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Romén Adama Caetano Ramírez · Technical Project Manager</title>
+<meta name="description" content="Technical Project Manager e ingeniero informático. Dirijo proyectos de software y orquesto agentes de IA, MCP y modelos locales para entregarlos antes.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="Romén Adama Caetano Ramírez · Technical Project Manager">
+<meta property="og:description" content="Dirijo proyectos de software y orquesto agentes de IA, MCP y modelos locales. Defino la arquitectura, reviso cada PR y despliego.">
+<meta property="og:type" content="website">
+<style>
+:root{--fondo:#0a0a0a;--panel:#111113;--linea:#27272a;--texto:#e4e4e7;--tenue:#a1a1aa;--fuerte:#fafafa;--morado:#8b5cf6;--lila:#a78bfa;--ancho:1080px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--fondo);color:var(--texto);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--lila);text-decoration:none}a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--morado);outline-offset:3px;border-radius:6px}
+.c{max-width:var(--ancho);margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:rgba(10,10,10,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--linea)}
+nav .c{display:flex;gap:22px;align-items:center;height:58px;overflow-x:auto;white-space:nowrap}
+nav b{color:var(--fuerte);font-weight:650;margin-right:auto}
+nav a{color:var(--tenue);font-size:15px}nav a:hover{color:var(--fuerte);text-decoration:none}
+header{position:relative;overflow:hidden;border-bottom:1px solid var(--linea)}
+header .c{position:relative;padding-top:96px;padding-bottom:88px}
+.anillos{position:absolute;right:-120px;top:50%;width:620px;height:620px;transform:translateY(-50%);opacity:.9;pointer-events:none}
+.anillos circle{fill:none;stroke:var(--morado);stroke-width:1.6;animation:pulso 5s ease-in-out infinite}
+.anillos circle:nth-child(2){animation-delay:.5s}.anillos circle:nth-child(3){animation-delay:1s}.anillos circle:nth-child(4){animation-delay:1.5s}.anillos circle:nth-child(5){animation-delay:2s}.anillos circle:nth-child(6){animation-delay:2.5s}
+@keyframes pulso{0%,100%{stroke-opacity:.16}50%{stroke-opacity:.8}}
+@media (prefers-reduced-motion:reduce){.anillos circle{animation:none;stroke-opacity:.4}html{scroll-behavior:auto}}
+.raya{width:56px;height:5px;border-radius:3px;background:var(--morado);margin-bottom:26px}
+h1{color:var(--fuerte);font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-.03em;font-weight:750;max-width:14ch}
+.rol{margin-top:16px;color:var(--lila);font-size:clamp(19px,2.4vw,24px);font-weight:550}
+.pitch{margin-top:22px;max-width:60ch;color:var(--texto);font-size:19px}
+.botones{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.b{display:inline-block;padding:11px 20px;border-radius:999px;border:1px solid var(--linea);color:var(--fuerte);font-weight:600;font-size:15px}
+.b:hover{border-color:var(--morado);text-decoration:none}.b.p{background:var(--morado);border-color:var(--morado);color:#fff}
+section{padding:72px 0;border-bottom:1px solid var(--linea)}
+h2{color:var(--fuerte);font-size:30px;letter-spacing:-.02em;line-height:1.15;margin-bottom:10px}
+.sub{color:var(--tenue);max-width:64ch;margin-bottom:34px}
+.rej{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.t{background:var(--panel);border:1px solid var(--linea);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.t h3{color:var(--fuerte);font-size:20px;letter-spacing:-.01em}
+.t p{color:var(--texto);font-size:16px}
+.t .n{color:var(--tenue);font-size:14px}
+.et{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:8px}
+.et span{font-size:13px;color:var(--tenue);border:1px solid var(--linea);border-radius:999px;padding:3px 10px}
+.cif{display:flex;flex-wrap:wrap;gap:22px}
+.cif div{min-width:110px}.cif b{display:block;color:var(--fuerte);font-size:26px;letter-spacing:-.02em;line-height:1.1}.cif span{color:var(--tenue);font-size:14px}
+.flujo{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));counter-reset:p}
+.flujo div{position:relative;background:var(--panel);border:1px solid var(--linea);border-radius:14px;padding:18px 16px 16px;counter-increment:p}
+.flujo div::before{content:counter(p);display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--morado);color:#fff;font-size:14px;font-weight:700;margin-bottom:10px}
+.flujo b{display:block;color:var(--fuerte);font-size:16px}.flujo span{color:var(--tenue);font-size:14.5px}
+.lin{display:grid;gap:0}
+.lin article{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--linea)}
+.lin article:first-child{border-top:0}
+.lin time{color:var(--tenue);font-size:15px}
+.lin h3{color:var(--fuerte);font-size:18px}.lin p,.lin li{color:var(--texto);font-size:16px}.lin ul{margin:8px 0 0 18px}
+@media (max-width:640px){.lin article{grid-template-columns:1fr;gap:4px}header .c{padding-top:64px;padding-bottom:60px}.anillos{opacity:.35}}
+footer{padding:40px 0 60px;color:var(--tenue);font-size:14px}
+</style>
 </head>
 <body>
+<nav><div class="c"><b>Romén Adama</b><a href="#proyectos">Proyectos</a><a href="#metodo">Cómo trabajo</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="#english">English</a><a href="#contacto">Contacto</a></div></nav>
 
-<main>
-
-  <!-- Sidebar -->
-  <aside class="sidebar" data-sidebar>
-    <div class="sidebar-info">
-      <figure class="avatar-box">
-        <img src="./assets/media/avatar/avatar.png" alt="Romen-Dev" width="80">
-      </figure>
-      <div class="info-content">
-        <h1 class="name" title="Romen Dev">Romen Dev</h1>
-        <p class="title">Web developer</p>
-      </div>
-      <button class="info_more-btn" data-sidebar-btn>
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
-      </button>
+<header>
+  <svg class="anillos" viewBox="-310 -310 620 620" aria-hidden="true"><circle r="50"/><circle r="100"/><circle r="150"/><circle r="200"/><circle r="250"/><circle r="300"/></svg>
+  <div class="c">
+    <div class="raya"></div>
+    <h1>Romén Adama Caetano Ramírez</h1>
+    <p class="rol">Technical Project Manager · Ingeniero informático</p>
+    <p class="pitch">Dirijo proyectos de software de principio a fin. Trabajo con un ecosistema de agentes de IA, MCP y modelos locales que acelera la implementación, y yo defino la arquitectura, reviso cada pull request y hago el despliegue.</p>
+    <div class="botones">
+      <a class="b p" href="#proyectos">Ver proyectos</a>
+      <a class="b" href="https://github.com/Romen-Adama-Dev">GitHub</a>
+      <a class="b" href="https://www.linkedin.com/in/rom%C3%A9n-adama-caetano-ram%C3%ADrez">LinkedIn</a>
+      <a class="b" href="#contacto">Contacto</a>
     </div>
-    <div class="sidebar-info_more">
-      <div class="separator"></div>
-      <ul class="contacts-list">
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Email</p>
-            <a href="mailto:radamacr.trabajo@outlook.com" class="contact-link">radamacr.trabajo@outlook.com</a>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Phone</p>
-            <a href="tel:+34651759962" class="contact-link">+34 651 75 99 62</a>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="logo-github"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Github</p>
-            <a href="https://github.com/Romen-Adama-Dev/" class="contact-link">Romen-Adama-Dev</a>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">LinkedIn</p>
-            <a href="https://www.linkedin.com/in/rom%C3%A9n-adama-caetano-ram%C3%ADrez?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="contact-link">Romén Adama Caetano Ramírez</a>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-          <div class="contact-info">
-            <p class="contact-title">Location</p>
-            <address>Las Palmas de Gran Canaria, España</address>
-          </div>
-        </li>
-      </ul>
-      <div class="separator"></div>
-      <ul class="social-list">
-        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-reddit"></ion-icon></a></li>
-        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-        <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-discord"></ion-icon></a></li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- Main content -->
-  <div class="main-content">
-
-    <!-- Navbar -->
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
-      </ul>
-    </nav>
-
-    <!-- About section -->
-    <article class="about active" data-page="about">
-      <header>
-        <h2 class="h2 article-title">About me</h2>
-      </header>
-      <section class="about-text">
-        <p>I'm Romén Adama Caetano Ramírez, and I am a recent graduate with a degree in Computer Engineering from ULPGC, where I am currently finalizing my Bachelor's Thesis. My thesis project involves developing a web application using Angular 17/18 for the ITC (Canary Technological Institute).</p>
-        <p>As a software developer, my focus is on enhancing my Front-End skills. I have a strong passion for the technology sector and an entrepreneurial spirit that drives my interest in ICT (Information and Communication Technology) and project organization and creation.</p>
-        <p>Looking ahead, I aim to further develop my expertise in agile methodologies, project management, and ICT management.</p>
-      </section>
-      <section class="service">
-        <h3 class="h3 service-title">What I'm doing</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon/icon-design.svg" alt="design icon" width="40"></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Web design</h4>
-              <p class="service-item-text">Learning and training with the most modern and high-quality design tools for web design.</p>
-            </div>
-          </li>
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon/icon-dev.svg" alt="Web development icon" width="40"></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Web development</h4>
-              <p class="service-item-text">High-quality development of sites at a professional level. Currently focusing on Angular and Vanilla HTML, CSS, and JS.</p>
-            </div>
-          </li>
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon/icon-cloud.svg" alt="cloud icon" width="40"></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Cloud & Docker</h4>
-              <p class="service-item-text">Gaining expertise in cloud infrastructure and containerization using Docker to optimize deployment processes and scalability.</p>
-            </div>
-          </li>          
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon/icon-photo.svg" alt="camera icon" width="40"></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">IA</h4>
-              <p class="service-item-text">Currently training in the world of AI and all the tools being developed for it.</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="projects">
-        <h3 class="h3 projects-title">Projects</h3>
-        <ul class="projects-list has-scrollbar">
-          <li class="projects-item"><a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/"><img src="./assets/media/logos/H4G/h4g-b.png" alt="project logo"></a></li>
-          <li class="projects-item"><a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check
-
-_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e"><img src="./assets/media/logos/BK/bk-b.png" alt="project logo"></a></li>
-          <li class="projects-item"><a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?q=sharedwith:public%20parent:1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL"><img src="./assets/media/logos/XPlorer/xp.png" alt="project logo"></a></li>
-          <li class="projects-item"><a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/"><img src="./assets/media/logos/Demola/dc.png" alt="project logo"></a></li>
-          <li class="projects-item"><a href="https://romen-adama-dev.github.io/"><img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="project logo"></a></li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- Resume section -->
-    <article class="resume" data-page="resume">
-      <header>
-        <h2 class="h2 article-title">Resume</h2>
-      </header>
-      <section class="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-          <h3 class="h3">Education</h3>
-        </div>
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
-            <span>2018 — 2020</span>
-            <p class="timeline-text">The first two years of the Computer Engineering degree. Gained foundational knowledge in programming and computer science concepts.</p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Level B2 English, Oxford Test of English (2021)</h4>
-            <span>2021 — 2022</span>
-            <p class="timeline-text">Obtained a B2 level of English proficiency, certified by the Oxford Test of English. This certification is recognized by the University of Oxford and the British Council.</p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Politechnika Krakowska im. Tadeusza Kościuszki</h4>
-            <span>2021 — 2022</span>
-            <p class="timeline-text">Erasmus+ program. Studied in Poland for a year, gaining experience in a different academic environment and culture. Developing my English language skills and soft skills.</p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">University of Las Palmas de Gran Canaria, School of Computer Engineering</h4>
-            <span>2022 — 2024</span>
-            <p class="timeline-text">The last two years of the Computer Engineering degree. Specialized in web development and software engineering. Currently working on my Bachelor's Thesis.</p>
-          </li>
-        </ol>
-      </section>
-      <section class="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-          <h3 class="h3">Experience</h3>
-        </div>
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Front-End Associate at AIDA</h4>
-            <span>07/2024 — 11/2024</span>
-            <p class="timeline-text">
-              Contributed to the development and enhancement of web applications, honing skills in front-end development. Responsibilities included utilizing Vue.js to develop, maintain, and complete ongoing company projects, employing Storybook to design and document reusable components, and working with Blazor for projects involving .NET integration. This role provided valuable experience in modern web development tools and practices while collaborating in a professional software development environment.
-            </p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Internship at Edataconsulting</h4>
-            <span>02/2024 — 05/2024</span>
-            <p class="timeline-text">
-              Completed an internship at Edataconsulting, focusing on the development of a web application using Angular 17. Responsibilities included migrating from Angular 14 to Angular 17, implementing new features, ensuring a clear architecture, and correcting bugs.<br>
-              <strong>Software used:</strong> Angular, AWS, Spring Boot, YouTrack, Git, SonarQube, TablePlus, Slack, Docker.
-            </p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Airbnb Manager</h4>
-            <span>2023 — Present</span>
-            <p class="timeline-text">
-              Comprehensive management of a tourist apartment in Maspalomas, Gran Canaria. Responsibilities include handling reservations, customer service, cleaning, maintenance, and marketing.
-            </p>
-          </li>
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Research Department at the University of Las Palmas de Gran Canaria</h4>
-            <span>01/2019 — 12/2019</span>
-            <p class="timeline-text">
-              Part-time job at the research department of the University of Las Palmas de Gran Canaria. Responsibilities included office automation for database management, program administration, and content development.
-            </p>
-          </li>
-        </ol>
-      </section>           
-      <section class="skill">
-        <h3 class="h3 skills-title">My skills</h3>
-        <ul class="skills-list content-card">
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Html, CSS & JS</h5>
-              <data value="expert">Expert</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 90%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Git</h5>
-              <data value="advanced">Advanced</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Angular</h5>
-              <data value="advanced">Advanced</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 75%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Android Studio</h5>
-              <data value="advanced">Advanced</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Back-End (NodeJs, SprinBoot, Pyton, Java)</h5>
-              <data value="basic">Basic</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 40%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Notion, Confluence & Trello</h5>
-              <data value="intermediate">Intermediate</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">LaTex (overleaf)</h5>
-              <data value="basic">Basic</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 50%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Web design</h5>
-              <data value="intermediate">Intermediate</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Graphic design</h5>
-              <data value="intermediate">Intermediate</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 60%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Canva</h5>
-              <data value="expert">Expert</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style
-
-="width: 90%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">WordPress</h5>
-              <data value="basic">Basic</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 50%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Figma</h5>
-              <data value="intermediate">Intermediate</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 60%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">ChatGPT</h5>
-              <data value="expert">Expert</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 90%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Office automation</h5>
-              <data value="advanced">Advanced</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 75%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">AWS & Azure</h5>
-              <data value="basic">Basic</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 50%;"></div>
-            </div>
-          </li>
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">Dev-Ops</h5>
-              <data value="intermediate">Intermediate</data>
-            </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 65%;"></div>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </article>
-
-    <!-- Portfolio section -->
-    <article class="portfolio" data-page="portfolio">
-      <header>
-        <h2 class="h2 article-title">Portfolio</h2>
-      </header>
-      <section class="projects">
-        <ul class="filter-list">
-          <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
-          <li class="filter-item"><button data-filter-btn>Web design</button></li>
-          <li class="filter-item"><button data-filter-btn>Applications</button></li>
-          <li class="filter-item"><button data-filter-btn>Web development</button></li>
-          <li class="filter-item"><button data-filter-btn>Hackatons</button></li>
-          <li class="filter-item"><button data-filter-btn>Management</button></li>
-          <li class="filter-item"><button data-filter-btn>Certification</button></li>
-        </ul>
-        <div class="filter-select-box">
-          <button class="filter-select" data-select>
-            <div class="select-value" data-selecct-value>Select category</div>
-            <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
-          </button>
-          <ul class="select-list">
-            <li class="select-item"><button data-select-item>All</button></li>
-            <li class="select-item"><button data-select-item>Web design</button></li>
-            <li class="select-item"><button data-select-item>Applications</button></li>
-            <li class="select-item"><button data-select-item>Web development</button></li>
-            <li class="select-item"><button data-filter-btn>Hackatons</button></li>
-            <li class="select-item"><button data-filter-btn>Management</button></li>
-            <li class="select-item"><button data-filter-btn>Certification</button></li>
-          </ul>
-        </div>
-        <ul class="project-list">
-          <li class="project-item active" data-filter-item data-category="management"><a href="https://drive.google.com/file/d/1zdV1GQ3MC1m7dC0XAQWSXjzmygdJ1JAw/view?usp=sharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/PMI/fundamentals-of-predictive-project-management.png" alt="pmi" loading="lazy">
-            </figure>
-            <h3 class="project-title">PMI-KICKOFF</h3>
-            <p class="project-category">Management</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="management"><a href="https://drive.google.com/drive/folders/1EtGm6KxwCodItqHKsQm9deludYhvYkEx?usp=sharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/PMI/pmi.png" alt="pmi" loading="lazy">
-            </figure>
-            <h3 class="project-title">PMI - Free Resources</h3>
-            <p class="project-category">Management</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="web development"><a href="https://github.com/Romen-Adama-Dev/DevTalles-Angular">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/images/blog/dev-tales-angular.png" alt="devtalles-angular" loading="lazy">
-            </figure>
-            <h3 class="project-title">DevTalles Angular</h3>
-            <p class="project-category">Web development</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="web development"><a href="https://github.com/Romen-Adama-Dev/QR-Generator">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/QR-Complement/qr.png" alt="qr-generator" loading="lazy">
-            </figure>
-            <h3 class="project-title">Qr-Generator-Complement</h3>
-            <p class="project-category">Web development</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="certification"><a href="https://drive.google.com/file/d/19IrwQOnqiUJn1Rdcb90RYYw9cZAGZ3tP/view?usp=sharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/GitKraken/g-kraken.png" alt="g-kraken" loading="lazy">
-            </figure>
-            <h3 class="project-title">Romen-Dev</h3>
-            <p class="project-category">Certification</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="web development"><a href="https://romen-adama-dev.github.io/">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/Romen-Dev/logo-w.png" alt="romen-dev" loading="lazy">
-            </figure>
-            <h3 class="project-title">Romen-Dev</h3>
-            <p class="project-category">Web development</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="certification"><a href="https://drive.google.com/file/d/1u3UxEbJ_XYK4gm2e4OkN8_md8ihid0ft/view?usp=sharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/DevOps/devops.png" alt="devops" loading="lazy">
-            </figure>
-            <h3 class="project-title">Dev-Ops EII</h3>
-            <p class="project-category">Certification</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.airbnb.es/rooms/834990665779759450?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Maspalomas%2C%20Spain&pets=0&search_mode=regular_search&check_in=2024-08-01&check_out=2024-08-06&source_impression_id=p3_1718737363_P3g6CFqjnTxM-p_j&previous_page_section_name=1001&federated_search_id=9072fe3b-73ea-4819-8cd6-7802823a2a8e">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/BK/bk-b.png" alt="bk" loading="lazy">
-            </figure>
-            <h3 class="project-title">Bungalow Kiwi</h3>
-            <p class="project-category">Management</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.figma.com/files/project/40624190">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/FIgma/figma.png" alt="surf-sharing" loading="lazy">
-            </figure>
-            <h3 class="project-title">Project Management</h3>
-            <p class="project-category">Management</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="applications"><a href="https://github.com/AlexS-1/SurfSharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
-            </figure>
-            <h3 class="project-title">SurfSharing</h3>
-            <p class="project-category">Applications</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="management"><a href="https://www.figma.com/board/ixa6cIeBdcB6fgsskkY5RG/USERS-STORIES?node-id=0-1&t=vIW4jUiWwnA2ZEUE-0">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/SurfSharing/ss.png" alt="surf-sharing" loading="lazy">
-            </figure>
-            <h3 class="project-title">SurfSharing</h3>
-            <p class="project-category">Management</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="web design"><a href="https://www.figma.com/design/SndPMnPcuDf6toJ0hJcFxh/PAMN-Museum?node-id=0-1&t=HYGNJzXOOs6h8H0S-1">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
-            </figure>
-            <h3 class="project-title">PAMN Museum</h3>
-            <p class="project-category">Web design</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="applications"><a href="https://github.com/Romen-Adama-Dev/PAMNMuseum.git">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/PAMN/pamn.png" alt="pamm-museum" loading="lazy">
-            </figure>
-            <h3 class="project-title">PAMN Museum</h3>
-            <p class="project-category">Applications</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="hackatons"><a href="https://drive.google.com/drive/folders/1bG-AQj8RbERzZkPK3nbrFa1SnjrYNluL?usp=sharing">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/XPlorer/xp-doc.png" alt="xplorer" loading="lazy">
-            </figure>
-            <h3 class="project-title">Santander Xplorer</h3>
-            <p class="project-category">Hackatons</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="hackatons"><a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/Demola/dc.png" alt="demola" loading="lazy">
-            </figure>
-            <h3 class="project-title">Demola Canarias</h3>
-            <p class="project-category">Hackatons</p></a>
-          </li>
-          <li class="project-item active" data-filter-item data-category="hackatons"><a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/">
-            <figure class="projects-item">
-              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-              <img src="./assets/media/logos/H4G/h4g-b.png" alt="h4g" loading="lazy">
-            </figure>
-            <h3 class="project-title">Hack4Good</h3>
-            <p class="project-category">Hackatons</p></a>
-          </li>
-        </ul>
-      </section>
-    </article>
-    
-    <!-- Blog section -->
-    <article class="blog" data-page="blog">
-      <header>
-        <h2 class="h2 article-title">Blog</h2>
-      </header>
-      <section class="blog-posts">
-        <ul class="blog-posts-list">
-          <li class="blog-post-item">
-            <a href="https://cursos.devtalles.com/courses/vue-cero-a-experto">
-              <figure class="blog-banner-box">
-                <img src="./assets/images/blog/dev-tales-vueks.png" alt="Vue.js Course" loading="lazy">
-              </figure>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <p class="blog-category">Education</p><span class="dot"></span><time datetime="2024-11-05">Tuesday, November 5, 2024</time>
-                </div>
-                <h3 class="h3 blog-item-title">Mastering Vue.js from Scratch</h3>
-                <p class="blog-text">An in-depth course on Vue.js, covering foundational to advanced concepts for building scalable and maintainable web applications.</p>
-              </div>
-            </a>
-          </li>          
-          <li class="blog-post-item">
-            <a href="https://learn.microsoft.com/es-es/training/modules/blazor-introduction/">
-              <figure class="blog-banner-box">
-                <img src="./assets/images/blog/blazor.png" alt="Introduction to Blazor" loading="lazy">
-              </figure>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <p class="blog-category">Education</p><span class="dot"></span><time datetime="2024-11-05">Tuesday, November 5, 2024</time>
-                </div>
-                <h3 class="h3 blog-item-title">Getting Started with Blazor</h3>
-                <p class="blog-text">A comprehensive introduction to Blazor, focusing on its features and use cases for building interactive web applications with .NET.</p>
-              </div>
-            </a>
-          </li>
-          <li class="blog-post-item">
-            <a href="https://github.com/Romen-Adama-Dev/LibreChat">
-              <figure class="blog-banner-box">
-                <img src="./assets/images/blog/librechat.png" alt="LibreChat Project" loading="lazy">
-              </figure>
-              <div class="blog-content">
-                <div class="blog-meta">
-                  <p class="blog-category">Development</p><span class="dot"></span><time datetime="2024-08-30">Friday, August 30, 2024</time>
-                </div>
-                <h3 class="h3 blog-item-title">LibreChat Enhancements</h3>
-                <p class="blog-text">Updates and customizations to LibreChat tailored to meet specific company requirements, showcasing advanced collaboration and adaptation techniques.</p>
-              </div>
-            </a>
-          </li>          
-          <li class="blog-post-item"><a href="https://learn.microsoft.com/es-es/training/career-paths/ai-engineer">
-            <figure class="blog-banner-box"><img src="./assets/images/blog/microsoft-ia.png" alt="Ingeniero de IA" loading="lazy"></figure>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
-              </div>
-              <h3 class="h3 blog-item-title">Free course</h3>
-              <p class="blog-text">Free course offered by Microsoft to become an AI Engineer.</p>
-            </div></a>
-          </li>
-          <li class="blog-post-item"><a href="https://cursos.devtalles.com/courses/angular">
-            <figure class="blog-banner-box"><img src="./assets/images/blog/dev-tales-angular.png" alt="Dev-Talles Angular" loading="lazy"></figure>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
-              </div>
-              <h3 class="h3 blog-item-title">Angular Course</h3>
-              <p class="blog-text">I am taking the Dev-Tales course on Angular, a very comprehensive and well-explained course.</p>
-            </div></a>
-          </li>
-          <li class="blog-post-item"><a href="https://learn.gitkraken.com/courses/git-foundations">
-            <figure class="blog-banner-box"><img src="./assets/images/blog/git-kraken.png" alt="git-kraken" loading="lazy"></figure>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <p class="blog-category">Education</p><span class="dot"></span><time datetime="2022-02-23">Wed 19, 2024</time>
-              </div>
-              <h3 class="h3 blog-item-title">Free course</h3>
-              <p class="blog-text">Free course offered by Git-Kraken to become an expert in Git.</p>
-            </div></a>
-          </li>
-          
-        </ul>
-      </section>
-      
-    </article>
-
-    <!-- Contact section -->
-    <article class="contact" data-page="contact">
-      <header>
-        <h2 class="h2 article-title">Contact</h2>
-      </header>
-      <section class="mapbox" data-mapbox>
-        <figure>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7039.162367497625!2d-15.483205889625424!3d28.098315371088916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4094429440f3cb%3A0x29aa5abc5aa805a6!2s35018%20Tamaraceite%2C%20Las%20Palmas!5e0!3m2!1ses!2ses!4v1718889461874!5m2!1ses!2ses" width="400" height="300" loading="lazy"></iframe>
-        </figure>
-      </section>
-      <section class="contact-form">
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script type="text/javascript">
-          (function(){
-              emailjs.init("Xls9trtWG184TRo6U");
-          })();
-        </script>
-        <h3 class="h3 form-title">Contact Form</h3>
-        <form id="contact-form" class="form">
-          <div class="input-wrapper">
-            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-          </div>
-          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-          <button class="form-btn" type="submit" data-form-btn>
-            <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
-          </button>
-        </form>
-        <script type="text/javascript">
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            // Collect the form data
-            var fullName = this.fullname.value;
-            var email = this.email.value;
-            var message = this.message.value;
-            // Concatenate email and message
-            var fullMessage = `Email: ${email}\n\nMessage:\n${message}`;
-            // Use EmailJS to send the email
-            emailjs.send("service_lr27tjm", "template_9st8364", {
-              to_name: "Recipient Name",
-              from_name: fullName,
-              message: fullMessage,
-              reply_to: email
-            })
-            .then(function(response) {
-              console.log('SUCCESS!', response.status, response.text);
-              alert("Message sent successfully!");
-            }, function(error) {
-              console.log('FAILED...', error);
-              alert("Message failed to send. Please try again later.");
-            });
-          });
-        </script>
-      </section>
-    </article>
   </div>
-</main>
+</header>
 
-<!-- Custom JS link -->
-<script src="./assets/js/script.js"></script>
+<section>
+  <div class="c">
+    <h2>Qué aporto</h2>
+    <p class="sub">Tres cosas que se pueden comprobar en mis repositorios.</p>
+    <div class="rej">
+      <div class="t"><h3>Gestión con rastro</h3><p>Cada proyecto lleva su desglose de trabajo, su registro de riesgos, un plan con hitos y las decisiones de arquitectura por escrito. El plan vivo está en OpenProject o en Plane.</p></div>
+      <div class="t"><h3>Orquestación de IA</h3><p>Coordino Claude Code, Codex, Antigravity y modelos locales con memoria común. Una rama y una PR por tarea, revisión cruzada entre agentes y aprobación mía antes de cualquier cambio sin vuelta atrás.</p></div>
+      <div class="t"><h3>Sistemas propios</h3><p>FastAPI, PostgreSQL, Docker Compose, systemd y Tailscale en servidores autoalojados. Los datos no salen de la máquina y cada despliegue se puede repetir.</p></div>
+    </div>
+  </div>
+</section>
 
-<!-- Ionicons link -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<section id="proyectos">
+  <div class="c">
+    <h2>Proyectos</h2>
+    <p class="sub">Los públicos se pueden clonar y arrancar. Los de empresa los enseño como demos independientes con datos inventados.</p>
+    <div class="rej">
+      <div class="t">
+        <h3><a href="https://github.com/Romen-Adama-Dev/jarvis-local">jarvis-local</a></h3>
+        <p>Mi Trabajo Fin de Máster: un asistente para jefes de proyecto que corre entero en un servidor propio. Responde citando documento y página, y dice que no lo sabe cuando no encuentra evidencia.</p>
+        <div class="cif"><div><b>53</b><span>PR fusionadas</span></div><div><b>4</b><span>modelos comparados</span></div><div><b>9</b><span>perfiles de despliegue</span></div></div>
+        <p class="n">Descarté el modelo más rápido porque inventaba respuestas que el contexto no tenía.</p>
+        <div class="et"><span>RAG</span><span>Ollama</span><span>Qdrant</span><span>MCP</span><span>OpenProject</span><span>FastAPI</span></div>
+      </div>
+      <div class="t">
+        <h3><a href="https://github.com/Romen-Adama-Dev/erp-esignature-connector-demo">erp-esignature-connector-demo</a></h3>
+        <p>Caso de estudio de una integración entre un ERP y una plataforma de firma electrónica, con datos de una empresa ficticia. Procesa por lotes, reintenta solo los fallos temporales y no duplica envíos.</p>
+        <div class="cif"><div><b>18</b><span>tests</span></div><div><b>6</b><span>decisiones (ADR)</span></div></div>
+        <p class="n">Incluye el WBS, el registro RAID y el plan de salida a producción.</p>
+        <div class="et"><span>Python</span><span>Docker</span><span>Idempotencia</span><span>WBS</span><span>RAID</span></div>
+      </div>
+      <div class="t">
+        <h3><a href="https://github.com/Romen-Adama-Dev/ITC-Dashboard">ITC Dashboard</a></h3>
+        <p>Mi Trabajo Fin de Grado: una librería de componentes Angular para montar cuadros de mando arrastrando y soltando, con accesibilidad e internacionalización.</p>
+        <div class="cif"><div><b>157</b><span>commits propios</span></div></div>
+        <div class="et"><span>Angular</span><span>TypeScript</span><span>WCAG</span><span>SonarQube</span></div>
+      </div>
+      <div class="t">
+        <h3>supernodo</h3>
+        <p>La infraestructura con la que trabajo a diario: un servidor que coordina a los agentes, despliega lo que apruebo y me avisa por Telegram. El caso de estudio público está en preparación.</p>
+        <div class="cif"><div><b>40</b><span>servicios systemd</span></div><div><b>234</b><span>tests</span></div></div>
+        <div class="et"><span>Agentes</span><span>systemd</span><span>Tailscale</span><span>Paperclip</span><span>Plane</span></div>
+      </div>
+      <div class="t">
+        <h3>Simple</h3>
+        <p>Una aplicación de hábitos y salud: web en Next.js y Supabase con seguridad por fila, y apps nativas para iPhone y Android sobre la misma base de datos. Repositorio privado, en beta cerrada.</p>
+        <div class="cif"><div><b>100</b><span>cuentas en la beta</span></div></div>
+        <div class="et"><span>Next.js</span><span>Supabase</span><span>SwiftUI</span><span>Jetpack Compose</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section id="metodo">
+  <div class="c">
+    <h2>Cómo trabajo</h2>
+    <p class="sub">El mismo recorrido para una tarea pequeña que para una entrega grande.</p>
+    <div class="flujo">
+      <div><b>Alcance</b><span>Criterios de aceptación y riesgos antes de escribir código.</span></div>
+      <div><b>Rama y PR</b><span>Un agente implementa una tarea en su rama, con tests.</span></div>
+      <div><b>Revisión cruzada</b><span>Otro agente audita el cambio y busca lo que falla.</span></div>
+      <div><b>Mi revisión</b><span>Leo la PR y decido. Nada se fusiona sin mi aprobación.</span></div>
+      <div><b>Despliegue</b><span>Automático tras fusionar, repetible y con aviso.</span></div>
+      <div><b>Medición</b><span>Lo medido se anota: tiempos, aciertos y fallos.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="c">
+    <h2>Experiencia</h2>
+    <div class="lin">
+      <article><time>Dic. 2025 — actualidad</time><div><h3>Junior Project Manager de IT</h3><ul>
+        <li>Diseñé un conector en Python y Docker entre el ERP y una plataforma de firma electrónica autoalojada, probado en un piloto.</li>
+        <li>Desarrollé el backend en FastAPI de un sistema de llamadas atendidas por un agente de voz con IA, con auditoría de seguridad antes de producción.</li>
+        <li>Documenté como código el clúster interno de servicios: Docker Swarm, PostgreSQL con réplica, SSO y monitorización, con copias verificadas.</li>
+        <li>Extensiones AL para Microsoft Dynamics 365 Business Central: informes, layouts y una extensión de firma con pruebas automatizadas.</li>
+      </ul></div></article>
+      <article><time>Jul. 2024 — nov. 2024</time><div><h3>Front-End Associate en AIDA</h3><p>Desarrollo y mantenimiento de aplicaciones web con Vue.js, componentes documentados en Storybook y proyectos con Blazor sobre .NET.</p></div></article>
+      <article><time>2019 y 2020</time><div><h3>Reconocimientos</h3><p><a href="https://catedratelefonica.ulpgc.es/premiados-hackforgood-canarias-2019/">Premiado en HackForGood Canarias 2019</a> y <a href="http://acostasub.com/exito-con-el-reto-de-acostasub-meteoport-oceanos-4-0-demola-canarias-11a-edicion/">reto MeteoPort de Demola Canarias</a>.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="formacion">
+  <div class="c">
+    <h2>Formación</h2>
+    <div class="lin">
+      <article><time>2026</time><div><h3>Máster en Gestión de Proyectos</h3><p>Trabajo Fin de Máster entregado en noviembre de 2026: Jarvis Local, dirigido como un proyecto real con criterios de aceptación, fases y presupuesto.</p></div></article>
+      <article><time>2018 — 2025</time><div><h3>Grado en Ingeniería Informática, ULPGC</h3><p>Especialidad en ingeniería del software. Un curso de Erasmus+ en la Politechnika Krakowska (2021 — 2022).</p></div></article>
+      <article><time>Idiomas</time><div><h3>Español nativo, inglés B2</h3><p>Oxford Test of English (2021). Preparando el C1.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="english" lang="en">
+  <div class="c">
+    <h2>English summary</h2>
+    <p class="sub" style="max-width:74ch;color:var(--texto)">Technical Project Manager and computer engineer based in Las Palmas de Gran Canaria. I run software projects end to end and work with an ecosystem of AI agents, MCP and local models that speeds up implementation, while I define the architecture, review every pull request and handle deployment. My master's thesis, <a href="https://github.com/Romen-Adama-Dev/jarvis-local">jarvis-local</a>, is a fully local AI assistant for project managers that cites its sources and abstains without evidence. <a href="https://github.com/Romen-Adama-Dev/erp-esignature-connector-demo">erp-esignature-connector-demo</a> is a case study of an ERP to e-signature integration with fictional data, tests and its project artifacts (WBS, RAID log, plan and ADRs).</p>
+  </div>
+</section>
+
+<section id="contacto" style="border-bottom:0">
+  <div class="c">
+    <h2>Contacto</h2>
+    <p class="sub">Busco un puesto de PM técnico o de ingeniero de IA, en España o en remoto.</p>
+    <div class="botones" style="margin-top:0">
+      <a class="b p" href="mailto:radamacr.trabajo@outlook.com">Escríbeme</a>
+      <a class="b" href="https://www.linkedin.com/in/rom%C3%A9n-adama-caetano-ram%C3%ADrez">LinkedIn</a>
+      <a class="b" href="https://github.com/Romen-Adama-Dev">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="c">Romén Adama Caetano Ramírez · Las Palmas de Gran Canaria</div></footer>
 </body>
 </html>
-```

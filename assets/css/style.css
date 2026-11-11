@@ -1142,3 +1142,32 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* ---------- 2026 ---------- */
 .projects-item img[src$=".svg"] { filter: none; }
+
+/* ---------- Resume and portfolio thumbnails ---------- */
+.timeline-bullets { margin: 8px 0 0 18px; }
+.timeline-bullets li { list-style: disc; margin-bottom: 6px; color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; }
+.timeline-tools { margin-top: 8px; color: var(--light-gray-70); font-size: var(--fs-7); font-weight: var(--fw-300); line-height: 1.6; }
+.timeline-tools strong { color: var(--white-2); font-weight: var(--fw-400); }
+.timeline-item-title { line-height: 1.4; }
+
+.project-item .projects-item {
+  min-width: 0;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  background: #0b0b0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-item .projects-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8%;
+}
+.project-item .projects-item img[src$=".svg"] { object-fit: cover; padding: 0; }
+.timeline-item-title, .project-title { text-transform: none; }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="IT inventory for ISO">
+  <rect width="600" height="400" fill="#0b0b0d"/>
+  <g transform="translate(470 110)" fill="none" stroke="#8b5cf6" stroke-width="2"><circle r="40" opacity=".9"/><circle r="80" opacity=".7"/><circle r="120" opacity=".5"/><circle r="160" opacity=".32"/><circle r="200" opacity=".18"/></g>
+  <circle cx="470" cy="110" r="7" fill="#fafafa"/>
+  <rect x="44" y="226" width="46" height="5" rx="2.5" fill="#8b5cf6"/>
+  <text x="44" y="284" style="font:700 36px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;fill:#fafafa;letter-spacing:-1px">IT inventory for ISO</text>
+  <text x="44" y="322" style="font:400 19px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;fill:#a1a1aa">Spreadsheets, Snipe-IT and Entra ID</text>
+</svg>
